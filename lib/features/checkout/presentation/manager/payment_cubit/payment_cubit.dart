@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 // ignore: depend_on_referenced_packages
 import 'package:meta/meta.dart';
@@ -25,5 +27,10 @@ class PaymentCubit extends Cubit<PaymentState> {
     }, (success) {
       emit(PaymentSuccess());
     });
+  }
+  @override
+  void onChange(Change<PaymentState> change) {
+    log(change.toString());
+    super.onChange(change);
   }
 }

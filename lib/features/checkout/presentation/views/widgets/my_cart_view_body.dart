@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:payment/core/utils/stripe_service.dart';
+import 'package:payment/features/checkout/data/data_source/checkout_datasource.dart';
+import 'package:payment/features/checkout/data/repo/checkout_repo_imp.dart';
+import 'package:payment/features/checkout/presentation/manager/payment_cubit/payment_cubit.dart';
 
 import 'custom_buttton.dart';
 import 'order_info_item.dart';
@@ -51,7 +56,12 @@ class MyCartViewBody extends StatelessWidget {
                 ),
                 context: context,
                 builder: (context) {
-                  return const PaymentMethodsBottomSheet();
+                  return BlocProvider(
+                    create: (context) => PaymentCubit(CheckoutRepoImp(
+                        CheckoutDataSourceImpl(
+                            stripeService: StripeService()))),
+                    child: const PaymentMethodsBottomSheet(),
+                  );
                 },
               );
             },
@@ -62,4 +72,3 @@ class MyCartViewBody extends StatelessWidget {
     );
   }
 }
-

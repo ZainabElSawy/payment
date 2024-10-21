@@ -3,7 +3,7 @@ import 'package:dio/dio.dart';
 class ApiService {
   final Dio dio = Dio();
   Future<Response> post(
-      {required String body,
+      {required Map<String, dynamic> body,
       required String url,
       required String token,
       String? contentType}) async {
