@@ -4,11 +4,10 @@ import 'package:dio/dio.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
 import 'package:payment/core/constants/api_keys.dart';
 import 'package:payment/core/utils/api_service.dart';
-import 'package:payment/features/checkout/data/models/ephemeral_key_model/ephemeral_key_model.dart';
-import 'package:payment/features/checkout/data/models/payment_intent_input_model/payment_intent_input_model.dart';
-import 'package:payment/features/checkout/data/models/payment_intent_model/payment_intent_model.dart';
-
-import '../../features/checkout/data/models/init_payment_sheet_input_model/init_payment_sheet_input_model.dart';
+import '../../features/checkout/data/models/stripe/ephemeral_key_model/ephemeral_key_model.dart';
+import '../../features/checkout/data/models/stripe/init_payment_sheet_input_model/init_payment_sheet_input_model.dart';
+import '../../features/checkout/data/models/stripe/payment_intent_input_model/payment_intent_input_model.dart';
+import '../../features/checkout/data/models/stripe/payment_intent_model/payment_intent_model.dart';
 
 class StripeService {
   /*

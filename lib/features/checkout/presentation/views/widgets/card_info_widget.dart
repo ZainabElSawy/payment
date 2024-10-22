@@ -18,8 +18,7 @@ class CardInfoWidget extends StatelessWidget {
         ),
       ),
       child: Padding(
-        padding:
-            const EdgeInsets.symmetric(horizontal: 22, vertical: 16),
+        padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 16),
         child: Row(
           children: [
             SvgPicture.asset('assets/images/logo.svg'),
@@ -40,8 +39,7 @@ class CardInfoWidget extends StatelessWidget {
                   TextSpan(
                     text: 'Mastercard **78 ',
                     style: TextStyle(
-                      color:
-                          Colors.black.withOpacity(0.699999988079071),
+                      color: Colors.black.withOpacity(0.699999988079071),
                       fontSize: 16,
                       fontFamily: 'Inter',
                       fontWeight: FontWeight.w400,
@@ -57,4 +55,3 @@ class CardInfoWidget extends StatelessWidget {
     );
   }
 }
-

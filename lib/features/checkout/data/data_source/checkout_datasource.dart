@@ -1,6 +1,6 @@
 import 'package:payment/core/utils/stripe_service.dart';
 
-import '../models/payment_intent_input_model/payment_intent_input_model.dart';
+import '../models/stripe/payment_intent_input_model/payment_intent_input_model.dart';
 
 abstract class CheckoutDataSource {
   Future<void> makePayment(

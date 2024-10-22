@@ -13,5 +13,3 @@ class MyCartView extends StatelessWidget {
     );
   }
 }
-
-

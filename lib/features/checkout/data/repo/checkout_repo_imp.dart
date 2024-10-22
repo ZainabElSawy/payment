@@ -2,8 +2,9 @@ import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 import 'package:payment/core/errors/failure.dart';
 import 'package:payment/features/checkout/data/data_source/checkout_datasource.dart';
-import 'package:payment/features/checkout/data/models/payment_intent_input_model/payment_intent_input_model.dart';
 import 'package:payment/features/checkout/domain/repo/checkout_repo.dart';
+
+import '../models/stripe/payment_intent_input_model/payment_intent_input_model.dart';
 
 class CheckoutRepoImp extends CheckoutRepo {
   final CheckoutDataSource checkoutDataSource;

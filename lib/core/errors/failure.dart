@@ -51,6 +51,7 @@ class ServerFailure extends Failure {
 class NetworkFailure extends Failure {
   NetworkFailure(super.errorMessage);
 }
+
 class DataFailure extends Failure {
   DataFailure(super.errorMessage);
 }

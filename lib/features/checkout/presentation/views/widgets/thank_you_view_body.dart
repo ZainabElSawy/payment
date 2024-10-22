@@ -14,7 +14,7 @@ class ThankYouViewBody extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 15),
       child: Center(
-        child: Stack( 
+        child: Stack(
           clipBehavior: Clip.none,
           children: [
             const ThankYouCard(),
