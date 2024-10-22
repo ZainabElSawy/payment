@@ -5,9 +5,9 @@ import '../../../../../core/utils/styles.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar({
-    Key? key,
-   this.title,
-  }) : super(key: key);
+    super.key,
+    this.title,
+  });
   final String? title;
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       leading: Center(child: SvgPicture.asset("assets/images/Arrow.svg")),
       elevation: 0,
       title: Text(
-        title??"",
+        title ?? "",
         textAlign: TextAlign.center,
         style: Styles.textStyle25.copyWith(fontSize: 25),
       ),

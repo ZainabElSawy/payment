@@ -1,3 +1,9 @@
 {
-    "java.compile.nullAnalysis.mode": "automatic"
+    "java.compile.nullAnalysis.mode": "automatic",
+    "cSpell.words": [
+        "Hamdy",
+        "Importanttttttttttt",
+        "Zainab"
+    ],
+    "cmake.sourceDirectory": "D:/projects/important/payment/linux"
 }

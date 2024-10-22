@@ -4,6 +4,7 @@ class ApiService {
   final Dio dio = Dio();
   Future<Response> post(
       {required Map<String, dynamic> body,
+      Map<String, dynamic>? headers,
       required String url,
       required String token,
       String? contentType}) async {
@@ -12,10 +13,7 @@ class ApiService {
       data: body,
       options: Options(
         contentType: contentType ?? 'application/json',
-        headers: {
-          // 'Content-Type': contentType ?? 'application/json',
-          'Authorization': 'Bearer $token',
-        },
+        headers: headers ?? {'Authorization': 'Bearer $token'},
       ),
     );
     return response;
