@@ -61,13 +61,13 @@ class _CustomButtonBlocConsumerState extends State<CustomButtonBlocConsumer> {
               var transactionsData = getTransactionsData();
               executePaypalPayment(context, transactionsData);
 
-              // BlocProvider.of<PaymentCubit>(context).makePayment(
-              //     paymentIntentInputModel: PaymentIntentInputModel(
-              //   amount: '100',
-              //   currency: 'USD',
-              //   customerId: 'cus_R4pOX9ddbFiuZz',
-              //   //customerId: customerId.toString(),
-              // ));
+              // ظ  // BlocProvider.of<PaymentCubit>(context).makePayment(
+              //   //     paymentIntentInputModel: PaymentIntentInputModel(
+              //   //   amount: '100',
+              //   //   currency: 'USD',
+              //   //   customerId: 'cus_R4pOX9ddbFiuZz',
+              //   //   //customerId: customerId.toString(),
+              //   // ));
             },
             text: "Continue");
       },
